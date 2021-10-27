@@ -1,0 +1,26 @@
+* {
+  background-color: hsl(0, 0%, 95%);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  margin: 150px;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+.sedans h1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
