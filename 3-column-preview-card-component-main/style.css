@@ -1,26 +1,96 @@
-* {
-  background-color: hsl(0, 0%, 95%);
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+:root{
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray:hsl(0, 0%, 95%);
+  --font-header: "Big Shoulders Display";
+  --font-body: "Lexend Deca";
 }
 
-body {
+.container{
   display: flex;
-  margin: 150px;
+  flex-direction: row;
+  max-width: 900px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 14vh;
 }
 
-.sedans {
-  background-color: hsl(31, 77%, 52%);
-}
-.sedans h1 {
-  background-color: hsl(31, 77%, 52%);
+h1{
+  font-family: var(--font-header);
+  color: var(--very-light-gray);
 }
 
-.suvs {
-  background-color: hsl(184, 100%, 22%);
+button{
+  height: 50px;
+  width: 150px;
+  border-radius: 60px;
+  border-style: none;
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 15px;
+  background-color: var(--very-light-gray);
+  border: solid 2px;
+  border-color: var(--very-light-gray);
+  transition: 0.2s ease-in;
 }
 
-.luxury {
-  background-color: hsl(179, 100%, 13%);
+.btn-sedans{
+  color: var(--bright-orange);
+}
+.btn-suvs{
+  color: var(--dark-cyan);
+}
+.btn-luxury{
+  color: var(--very-dark-cyan);
+}
+
+.btn-sedans:hover{
+  color: var(--very-light-gray);
+  background-color: transparent;
+  cursor: pointer;
+
+}
+
+.btn-suvs:hover{
+  color: var(--very-light-gray);
+  background-color: transparent;
+  cursor: pointer;
+
+}
+
+.btn-luxury:hover{
+  color: var(--very-light-gray);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+p{
+  font-family: var(--font-body);
+  color: var(--transparent-white);
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 100px;
+}
+
+.card{
+  padding: 40px;
+}
+
+.sedans{
+  background-color: var(--bright-orange);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.suvs{
+  background-color: var(--dark-cyan);
+}
+
+.luxury{
+  background-color: var(--very-dark-cyan);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
